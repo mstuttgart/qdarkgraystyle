@@ -78,7 +78,7 @@ def main():
     window.tabifyDockWidget(ui.dockWidget1, ui.dockWidget2)
 
     # setup stylesheet
-    app.setStyleSheet(qdarkgraystyle.load_stylesheet())
+    app.setStyleSheet(qdarkgraystyle.load_stylesheet(pyside=False))
 
     # auto quit after 2s when testing on travis-ci
     if '--travis' in sys.argv:
