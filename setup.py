@@ -4,6 +4,7 @@
 # The MIT License (MIT)
 #
 # Copyright (c) <2013-2014> <Colin Duquesnoy>
+# Copyright (c) <2017> <Michell Stuttgart>
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -27,32 +28,18 @@
 QDarkGreyStyle is a dark gray stylesheet for python qt applications
 """
 from setuptools import setup, find_packages
-from qdarkstyle import __version__
+from qdarkgraystyle import __version__
 
 setup(
-    name='QDarkStyle',
+    name='QDarkGrayStyle',
     version=__version__,
     packages=find_packages(),
-    url='https://github.com/ColinDuquesnoy/QDarkStyleSheet',
-    license='MIT',
-    author='Colin Duquesnoy',
-    author_email='colin.duquesnoy@gmail.com',
-    description='A dark stylesheet for PyQt/PySide applications',
-    long_description="""
-This package provides a dark style sheet for PySide/PyQt4/PyQt5 applications.
-
-All you have to do is the following::
-
-    import qdarkstyle
-    app = QtGui.QApplication().instance()
-    # PySide
-    app.setStyleSheet(qdarkstyle.load_stylesheet())
-    # PyQt4
-    app.setStyleSheet(qdarkstyle.load_stylesheet(pyside=False))
-    # PyQt5
-    app.setStyleSheet(qdarkstyle.load_stylesheet_pyqt5())
-
-""",
+    url='https://github.com/mstuttgart/qdarkgray-stylesheet',
+    license='MIT License',
+    author='Michell Stuttgart',
+    author_email='michellstut@gmail.com',
+    description='A dark gray stylesheet for PyQt/PySide applications',
+    long_description=open('README.rst', 'r').read(),
     classifiers=[
           'Development Status :: 5 - Production/Stable',
           'Environment :: X11 Applications :: Qt',
@@ -65,4 +52,7 @@ All you have to do is the following::
           'Programming Language :: Python :: 2.7',
           'Programming Language :: Python :: 3.2',
           'Programming Language :: Python :: 3.3',
-          'Topic :: Software Development :: Libraries :: Application Frameworks'])
+          'Topic :: Software Development :: Libraries :: Application '
+          'Frameworks',
+    ],
+)
