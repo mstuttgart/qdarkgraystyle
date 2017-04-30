@@ -1043,7 +1043,7 @@ QToolButton {
     border: 1px transparent #76797C;
     border-radius: 2px;
     margin: 3px;
-    padding: 5px;
+    padding: 3px;
 }
 
 QToolButton[popupMode="1"] { /* only for MenuButtonPopup */

@@ -24,7 +24,7 @@
 # THE SOFTWARE.
 #
 """
-QDarkStyle is a darks stylesheet for python qt applications
+QDarkGreyStyle is a dark gray stylesheet for python qt applications
 """
 from setuptools import setup, find_packages
 from qdarkstyle import __version__
