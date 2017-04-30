@@ -2,6 +2,7 @@
  * The MIT License (MIT)
  *
  * Copyright (c) <2013-2014> <Colin Duquesnoy>
+ * Copyright (c) <2017> <Michell Stuttgart>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -23,11 +24,11 @@
  */
 QToolTip
 {
-    border: 1px solid #76797C;
-    background-color: #D1DBCB;
-    padding: 1px;
-    border-radius: 3px;
-    opacity: 100;
+     border: 1px solid black;
+     background-color: #D1DBCB;
+     padding: 1px;
+     border-radius: 3px;
+     opacity: 100;
 }
 
 QWidget
@@ -51,6 +52,7 @@ QWidget:item:hover
 QWidget:item:selected
 {
     background-color: #D1DBCB;
+    border: 0px
 }
 
 QCheckBox
@@ -66,12 +68,12 @@ QCheckBox:disabled
     color: #76797C;
 }
 
-QCheckBox::indicator,
-QGroupBox::indicator
+QCheckBox::indicator,QGroupBox::indicator
 {
     width: 18px;
     height: 18px;
 }
+
 QGroupBox::indicator
 {
     margin-left: 2px;
@@ -105,7 +107,7 @@ QGroupBox::indicator:checked:hover,
 QGroupBox::indicator:checked:focus,
 QGroupBox::indicator:checked:pressed
 {
-  border: none;
+    border: none;
     image: url(:/qss_icons/rc/checkbox_checked_focus.png);
 }
 
@@ -205,18 +207,18 @@ QMenuBar::item
 {
     background-color: #323232;
     background: transparent;
-    padding: 2px 20px 2px 20px;
+    /* padding: 2px 20px 2px 20px; */
 }
 
 QMenuBar::item:selected
 {
     background: transparent;
-    border: 1px solid #76797C;
+    /* border: 1px solid #76797C; */
 }
 
 QMenuBar::item:pressed
 {
-    border: 1px solid #76797C;
+    border: 0px solid #76797C;
     background-color: #D1DBCB;
     color: #000;
     margin-bottom:-1px;
@@ -226,20 +228,20 @@ QMenuBar::item:pressed
 QMenu
 {
     background-color: #323232;
-    border: 1px solid #76797C;
+    /* border: 1px solid #76797C; */
     color: #eff0f1;
-    margin: 2px;
+    /*margin: 2px; */
 }
 
 QMenu::icon
 {
-    margin: 5px;
+    /*margin: 5px;*/
 }
 
 QMenu::item
 {
-    padding: 5px 30px 5px 30px;
-    margin-left: 5px;
+    padding: 2px 30px 2px 30px;
+    /*margin-left: 5px;*/
     border: 1px solid transparent; /* reserve space for selection border */
 }
 
@@ -315,9 +317,9 @@ QAbstractItemView
     border-radius: 2px;
 }
 
-QWidget:focus, QMenuBar:focus
+QWidget:focus, QMenuBar:focus,QToolBar:focus,QScrollAreaViewer:focus
 {
-    border: 1px solid #D1DBCB;
+    /* border: 2px solid #D1DBCB; */
 }
 
 QTabWidget:focus, QCheckBox:focus, QRadioButton:focus, QSlider:focus
@@ -328,6 +330,8 @@ QTabWidget:focus, QCheckBox:focus, QRadioButton:focus, QSlider:focus
 QLineEdit
 {
     background-color: #1e1e1e;
+    selection-background-color: #D1DBCB;
+    selection-color: black;
     padding: 5px;
     border-style: solid;
     border: 1px solid #76797C;
@@ -351,8 +355,8 @@ QGroupBox::title {
 
 QAbstractScrollArea
 {
-    border-radius: 2px;
-    border: 1px solid #76797C;
+    border-radius: 0px;
+    border: 0px solid #76797C;
     background-color: transparent;
 }
 
@@ -549,17 +553,17 @@ QMenu::separator
     margin-right: 5px;
 }
 
-
 QFrame
 {
-    border-radius: 2px;
-    border: 1px solid #76797C;
+    border-radius: 0px;
+    /*border: 1px solid #76797C;*/
 }
+
 
 QFrame[frameShape="0"]
 {
-    border-radius: 2px;
-    border: 1px transparent #76797C;
+    border-radius: 0px;
+    border: 0px transparent #76797C;
 }
 
 QStackedWidget
@@ -568,8 +572,8 @@ QStackedWidget
 }
 
 QToolBar {
-    border: 1px transparent #393838;
-    background: 1px solid #323232;
+    border: 0px transparent #393838;
+    background: 0px solid #323232;
     font-weight: bold;
 }
 
@@ -597,7 +601,7 @@ QPushButton
     border-color: #76797C;
     border-style: solid;
     padding: 5px;
-    border-radius: 2px;
+    border-radius: 0px;
     outline: none;
 }
 
@@ -651,7 +655,7 @@ QComboBox:hover,QPushButton:hover,QAbstractSpinBox:hover,QLineEdit:hover,QTextEd
 
 QComboBox:on
 {
-    padding-top: 3px;
+    padding-top: 0px;
     padding-left: 4px;
     selection-background-color: #4a4a4a;
 }
@@ -689,13 +693,14 @@ QComboBox::down-arrow:focus
 }
 
 QAbstractSpinBox {
-    padding: 5px;
-    border: 1px solid #D1DBCB;
+    padding: 2px;
+    margin: 2px;
     background-color: #1e1e1e;
     color: #eff0f1;
-    border-radius: 2px;
+    border-radius: 0px;
     min-width: 75px;
     selection-background-color: #D1DBCB;
+    selection-color: black;
 }
 
 QAbstractSpinBox:up-button
@@ -738,6 +743,9 @@ QAbstractSpinBox::down-arrow:hover
 QLabel
 {
     border: 0px solid black;
+    margin-left: 2px;
+    margin-right: 2px;
+    color: #D1DBCB;
 }
 
 QTabWidget{
@@ -807,7 +815,7 @@ QTabBar::tab:top:!selected
     border: 1px solid #76797C;
     border-bottom: 1px transparent black;
     border-top-left-radius: 2px;
-    border-top-right-radius: 2px;    
+    border-top-right-radius: 2px;
 }
 
 QTabBar::tab:top:!selected:hover {
@@ -1040,36 +1048,36 @@ QSlider::handle:vertical {
 QToolButton {
     color: #D1DBCB;
     background-color: transparent;
-    border: 1px transparent #76797C;
-    border-radius: 2px;
-    margin: 3px;
-    padding: 3px;
+    border: 0px transparent #76797C;
+    border-radius: 0px;
+    padding: 1px;
+    margin-right: 5px;
 }
 
 QToolButton[popupMode="1"] { /* only for MenuButtonPopup */
  padding-right: 20px; /* make way for the popup button */
  border: 1px #76797C;
- border-radius: 5px;
+ border-radius: 0px;
 }
 
 QToolButton[popupMode="2"] { /* only for InstantPopup */
  padding-right: 10px; /* make way for the popup button */
- border: 1px #76797C;
+ border: 0px #76797C;
 }
 
 
 QToolButton:hover, QToolButton::menu-button:hover {
     background-color: transparent;
     border: 1px solid #D1DBCB;
-    padding: 5px;
+    padding: 2px;
 }
 
 QToolButton:checked, QToolButton:pressed,
         QToolButton::menu-button:pressed {
     color: black;
     background-color: #D1DBCB;
-    border: 1px solid #D1DBCB;
-    padding: 5px;
+    border: 0px solid #D1DBCB;
+    padding: 2px;
 }
 
 /* the subcontrol below is used only in the InstantPopup or DelayedPopup mode */
@@ -1209,6 +1217,8 @@ QToolBox::tab:selected { /* italicize selected tabs */
 
 QStatusBar::item {
     border: 0px transparent dark;
+    margin: 0px;
+    border: 0px;
  }
 
 
@@ -1291,3 +1301,4 @@ QDateEdit::down-arrow:focus
 {
     image: url(:/qss_icons/rc/down_arrow.png);
 }
+
