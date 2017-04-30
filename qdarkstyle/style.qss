@@ -631,6 +631,7 @@ QPushButton:pressed
 QComboBox
 {
     selection-background-color: #D1DBCB;
+    background-color: #31363B;
     border-style: solid;
     border: 1px solid #76797C;
     border-radius: 2px;
@@ -653,7 +654,6 @@ QComboBox:on
     padding-top: 3px;
     padding-left: 4px;
     selection-background-color: #4a4a4a;
-
 }
 
 QComboBox QAbstractItemView
@@ -690,11 +690,12 @@ QComboBox::down-arrow:focus
 
 QAbstractSpinBox {
     padding: 5px;
-    border: 1px solid #76797C;
+    border: 1px solid #D1DBCB;
     background-color: #1e1e1e;
     color: #eff0f1;
     border-radius: 2px;
     min-width: 75px;
+    selection-background-color: #D1DBCB;
 }
 
 QAbstractSpinBox:up-button
@@ -997,12 +998,27 @@ QSlider::groove:horizontal {
 }
 
 QSlider::handle:horizontal {
-    background: #1e1e1e;
-    border: 1px solid #565a5e;
-    width: 16px;
-    height: 16px;
-    margin: -8px 0;
-    border-radius: 9px;
+    background: #D1DBCB;
+    border: 1px solid #999999;
+    width: 10px;
+    height: 10px;
+    margin: -5px 0;
+}
+
+QSlider::add-page:qlineargradient {
+    background: #595858;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+QSlider::sub-page::qlineargradient:horizontal {
+    background:  #D1DBCB;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 
 QSlider::groove:vertical {
@@ -1014,12 +1030,11 @@ QSlider::groove:vertical {
 }
 
 QSlider::handle:vertical {
-    background: #1e1e1e;
-    border: 1px solid #565a5e;
-    width: 16px;
-    height: 16px;
-    margin: 0 -8px;
-    border-radius: 9px;
+    background: #D1DBCB;
+    border: 1px solid #999999;
+    width: 10px;
+    height: 10px;
+    margin: 0 -5px;
 }
 
 QToolButton {
