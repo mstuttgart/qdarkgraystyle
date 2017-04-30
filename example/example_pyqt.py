@@ -3,6 +3,7 @@
 # The MIT License (MIT)
 #
 # Copyright (c) <2013-2014> <Colin Duquesnoy>
+# Copyright (c) <2017> <Michell Stuttgart>
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -32,7 +33,7 @@ Requirements:
     - Python 2 or Python 3
     - PyQt4
 
-.. note.. :: qdarkstyle does not have to be installed to run
+.. note.. :: qdarkgraystyle does not have to be installed to run
     the example
 
 """
@@ -71,16 +72,16 @@ def main():
         ui.actionAction,
         ui.actionAction_C
     ])
-    window.setWindowTitle("QDarkStyle example")
+    window.setWindowTitle('QDarkGrayStyle example')
 
     # tabify dock widgets to show bug #6
     window.tabifyDockWidget(ui.dockWidget1, ui.dockWidget2)
 
     # setup stylesheet
-    app.setStyleSheet(qdarkstyle.load_stylesheet(pyside=False))
+    app.setStyleSheet(qdarkstyle.load_stylesheet())
 
     # auto quit after 2s when testing on travis-ci
-    if "--travis" in sys.argv:
+    if '--travis' in sys.argv:
         QtCore.QTimer.singleShot(2000, app.exit)
 
     # run
@@ -88,5 +89,5 @@ def main():
     app.exec_()
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()
