@@ -27,8 +27,16 @@
 """
 QDarkGreyStyle is a dark gray stylesheet for python qt applications
 """
+import os
+import sys
 from setuptools import setup, find_packages
 from qdarkgraystyle import __version__
+
+if sys.argv[-1] == 'publish':
+    os.system("git tag -a %s -m 'version %s'" % (__version__,  __version__))
+    os.system('git push --tags')
+    os.system('python setup.py sdist bdist_wheel upload -r pypi')
+    sys.exit()
 
 setup(
     name='qdarkgraystyle',
