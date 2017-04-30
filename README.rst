@@ -129,8 +129,14 @@ Snapshots
 
 Here are a few snapshots:
 
-![alt text](/screenshots/QDarkStyle example 1.png "QDarkStyle example 1")
-![alt text](/screenshots/QDarkStyle example 2.png "QDarkStyle example 2")
+.. image:: screenshots/screen-01.png
+    :target: https://github.com/mstuttgart/qdarkgray-stylesheet/screenshots/screen-01.png
+
+.. image:: screenshots/screen-02.png
+    :target: https://github.com/mstuttgart/qdarkgray-stylesheet/screenshots/screen-02.png
+
+.. image:: screenshots/screen-03.png
+    :target: https://github.com/mstuttgart/qdarkgray-stylesheet/screenshots/screen-03.png
 
 Credits
 =======
