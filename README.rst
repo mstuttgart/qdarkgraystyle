@@ -129,9 +129,9 @@ Snapshots
 
 Here are a few snapshots:
 
-* `Screenshot 1 <https://github.com/mstuttgart/qdarkgray-stylesheet/screenshots/screen-01.png>`_
-* `Screenshot 2 <https://github.com/mstuttgart/qdarkgray-stylesheet/screenshots/screen-02.png>`_
-* `Screenshot 3 <https://github.com/mstuttgart/qdarkgray-stylesheet/screenshots/screen-03.png>`_
+* `Screenshot 1 <https://github.com/mstuttgart/qdarkgray-stylesheet/blob/master/screenshots/screen-01.png>`_
+* `Screenshot 2 <https://github.com/mstuttgart/qdarkgray-stylesheet/blob/master/screenshots/screen-02.png>`_
+* `Screenshot 3 <https://github.com/mstuttgart/qdarkgray-stylesheet/blob/master/screenshots/screen-03.png>`_
 
 Credits
 =======
