@@ -26,3 +26,5 @@ deb_dist
 # hackedit project files
 .hackedit
 
+# virtualenv
+env/
