@@ -27,11 +27,13 @@ Python
 Install **qdarkgraystyle** package using the *setup* script or using *pip*
 
 .. code:: bash
+
     python setup.py install
 
 or
 
 .. code:: bash
+
     pip install qdarkgraystyle
 
 C++
@@ -87,29 +89,37 @@ Here is an example using PySide
 To use PyQt4 instead of PySide, you just need to replace
 
 .. code:: python
+
     app.setStyleSheet(qdarkgraystyle.load_stylesheet())
 
 by
 
 .. code:: python
+
     app.setStyleSheet(qdarkgraystyle.load_stylesheet(pyside=False))
 
 and
 
 .. code:: python
+
     from PySide import QtGui
 
 by
 
 .. code:: python
+
     from PyQt4 import QtGui 
 
-To use PyQt5, you need to use `load_stylesheet_pyqt5` instead of
-`load_stylesheet`.
+To use PyQt5, you need to use ``load_stylesheet_pyqt5`` instead of
+``load_stylesheet``.
 
-_There is an example included in the *example* folder.
+.. code:: python
+
+    app.setStyleSheet(qdarkgraystyle.load_stylesheet_pyqt5())
+
+There is an example included in the *example* folder.
 You can run the script without installing `qdarkgraystyle`. You only need to have
-PySide (or PyQt4 or PyQt5) installed on your system._
+PySide (or PyQt4 or PyQt5) installed on your system.
 
 Contribute
 ==========
@@ -122,14 +132,9 @@ Snapshots
 
 Here are a few snapshots:
 
-.. image:: screenshots/screen-01.png
-    :target: https://github.com/mstuttgart/qdarkgray-stylesheet/screenshots/screen-01.png
-
-.. image:: screenshots/screen-02.png
-    :target: https://github.com/mstuttgart/qdarkgray-stylesheet/screenshots/screen-02.png
-
-.. image:: screenshots/screen-03.png
-    :target: https://github.com/mstuttgart/qdarkgray-stylesheet/screenshots/screen-03.png
+* `Screenshot 1 <https://github.com/mstuttgart/qdarkgray-stylesheet/screenshots/screen-01.png>`_
+* `Screenshot 2 <https://github.com/mstuttgart/qdarkgray-stylesheet/screenshots/screen-02.png>`_
+* `Screenshot 3 <https://github.com/mstuttgart/qdarkgray-stylesheet/screenshots/screen-03.png>`_
 
 Credits
 =======
