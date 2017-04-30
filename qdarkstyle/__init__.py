@@ -3,6 +3,7 @@
 # The MIT License (MIT)
 #
 # Copyright (c) <2013-2014> <Colin Duquesnoy>
+# Copyright (c) <2017> <Michell Stuttgart>
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -23,7 +24,7 @@
 # THE SOFTWARE.
 #
 """
-Initialise the QDarkStyleSheet module when used with python.
+Initialise the QDarkGrayStyleSheet module when used with python.
 
 This modules provides a function to transparently load the stylesheets
 with the correct rc file.
@@ -32,18 +33,19 @@ import logging
 import platform
 
 
-__version__ = "2.3.0"
+__version__ = '1.0.0'
 
 
 def _logger():
-    return logging.getLogger('qdarkstyle')
+    return logging.getLogger('qdarkgraystyle')
 
 
 def load_stylesheet(pyside=True):
     """
     Loads the stylesheet. Takes care of importing the rc module.
 
-    :param pyside: True to load the pyside rc file, False to load the PyQt rc file
+    :param pyside: True to load the pyside rc file, False to load the PyQt rc 
+    file
 
     :return the stylesheet string
     """
@@ -59,11 +61,11 @@ def load_stylesheet(pyside=True):
     else:
         from PySide.QtCore import QFile, QTextStream
 
-    f = QFile(":qdarkstyle/style.qss")
+    f = QFile(':qdarkstyle/style.qss')
     if not f.exists():
-        _logger().error("Unable to load stylesheet, file not found in "
-                        "resources")
-        return ""
+        _logger().error('Unable to load stylesheet, file not found in '
+                        'resources')
+        return ''
     else:
         f.open(QFile.ReadOnly | QFile.Text)
         ts = QTextStream(f)
@@ -84,9 +86,6 @@ def load_stylesheet(pyside=True):
 def load_stylesheet_pyqt5():
     """
     Loads the stylesheet for use in a pyqt5 application.
-
-    :param pyside: True to load the pyside rc file, False to load the PyQt rc file
-
     :return the stylesheet string
     """
     # Smart import of the rc file
@@ -95,11 +94,11 @@ def load_stylesheet_pyqt5():
     # Load the stylesheet content from resources
     from PyQt5.QtCore import QFile, QTextStream
 
-    f = QFile(":qdarkstyle/style.qss")
+    f = QFile(':qdarkgraystyle/style.qss')
     if not f.exists():
-        _logger().error("Unable to load stylesheet, file not found in "
-                        "resources")
-        return ""
+        _logger().error('Unable to load stylesheet, file not found in '
+                        'resources')
+        return ''
     else:
         f.open(QFile.ReadOnly | QFile.Text)
         ts = QTextStream(f)
