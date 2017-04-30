@@ -1,19 +1,19 @@
 QDarkGray Stylesheet
 ====================
 
-.. image:: https://img.shields.io/travis/mstuttgart/https://github.com/mstuttgart/qdarkgray-stylesheet/master.svg?style=flat-square
-    :target: https://travis-ci.org/mstuttgart/https://github.com/mstuttgart/qdarkgraystyle
+.. image:: https://travis-ci.org/mstuttgart/qdarkgray-stylesheet.svg?branch=master?style=flat-square
+    :target: https://travis-ci.org/mstuttgart/qdarkgray-stylesheet
 
-.. image:: https://img.shields.io/pypi/v/https://github.com/mstuttgart/qdarkgraystyle.svg?style=flat-square
-    :target: https://pypi.python.org/pypi/https://github.com/mstuttgart/qdarkgraystyle
+.. image:: https://github.com/mstuttgart/qdarkgraystyle.svg?style=flat-square
+    :target: https://github.com/mstuttgart/qdarkgraystyle
 
-.. image:: https://img.shields.io/pypi/pyversions/https://github.com/mstuttgart/qdarkgraystyle.svg?style=flat-square
-    :target: https://pypi.python.org/pypi/https://github.com/mstuttgart/qdarkgraystyle
+.. image:: https://github.com/mstuttgart/qdarkgraystyle.svg?style=flat-square
+    :target: https://github.com/mstuttgart/qdarkgraystyle
 
-.. image:: https://img.shields.io/pypi/wheel/https://github.com/mstuttgart/qdarkgraystyle.svg?style=flat-square
-    :target: https://pypi.python.org/pypi/https://github.com/mstuttgart/qdarkgraystyle
+.. image:: https://github.com/mstuttgart/qdarkgraystyle.svg?style=flat-square
+    :target: https://github.com/mstuttgart/qdarkgraystyle
 
-.. image:: https://img.shields.io/pypi/l/https://github.com/mstuttgart/qdarkgraystyle.svg?style=flat-square
+.. image:: https://github.com/mstuttgart/qdarkgraystyle.svg?style=flat-square
     :target: https://github.com/mstuttgart/qdarkgraystyle/blob/master/LICENSE
 
 A dark stylesheet for Qt applications (Qt4, Qt5, PySide, PyQt4 and PyQt5).
