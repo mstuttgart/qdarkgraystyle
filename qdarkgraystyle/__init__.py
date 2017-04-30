@@ -32,6 +32,7 @@ with the correct rc file.
 import logging
 import platform
 
+import qdarkgraystyle.compile_qrc
 
 __version__ = '0.0.2'
 
@@ -49,6 +50,9 @@ def load_stylesheet(pyside=True):
 
     :return the stylesheet string
     """
+    # Validate that rc files is updated
+    compile_qrc.compile_all()
+
     # Smart import of the rc file
     if pyside:
         import qdarkgraystyle.pyside_style_rc
@@ -88,6 +92,9 @@ def load_stylesheet_pyqt5():
     Loads the stylesheet for use in a pyqt5 application.
     :return the stylesheet string
     """
+    # Validate that rc files is updated
+    compile_qrc.compile_all()
+
     # Smart import of the rc file
     import qdarkgraystyle.pyqt5_style_rc
 
