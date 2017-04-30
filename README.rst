@@ -4,16 +4,13 @@ QDarkGray Stylesheet
 .. image:: https://img.shields.io/travis/mstuttgart/qdarkgray-stylesheet/master.svg?style=flat-square
     :target: https://travis-ci.org/mstuttgart/qdarkgray-stylesheet
 
-.. image:: https://github.com/mstuttgart/qdarkgraystyle.svg?style=flat-square
-    :target: https://github.com/mstuttgart/qdarkgraystyle
+.. image:: https://img.shields.io/pypi/v/qdarkgraystyle.svg?style=flat-square
+    :target: https://pypi.python.org/pypi/QDarkGrayStyle
 
-.. image:: https://github.com/mstuttgart/qdarkgraystyle.svg?style=flat-square
-    :target: https://github.com/mstuttgart/qdarkgraystyle
+.. image:: https://img.shields.io/pypi/pyversions/qdarkgraystyle.svg?style=flat-square
+    :target: https://pypi.python.org/pypi/QDarkGrayStyle
 
-.. image:: https://github.com/mstuttgart/qdarkgraystyle.svg?style=flat-square
-    :target: https://github.com/mstuttgart/qdarkgraystyle
-
-.. image:: https://github.com/mstuttgart/qdarkgraystyle.svg?style=flat-square
+.. image:: https://img.shields.io/pypi/l/qdarkgraystyle.svg?style=flat-square
     :target: https://github.com/mstuttgart/qdarkgraystyle/blob/master/LICENSE
 
 A dark gray stylesheet for Qt applications (Qt4, Qt5, PySide, PyQt4 and PyQt5).
