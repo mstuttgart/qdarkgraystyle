@@ -7,9 +7,9 @@ include MANIFEST.in
 include setup.py
 include COPYING
 include README.md
-include qdarkstyle/style.qss
-include qdarkstyle/style.qrc
-include qdarkstyle/rc/*.png
+include qdarkgraystyle/style.qss
+include qdarkgraystyle/style.qrc
+include qdarkgraystyle/rc/*.png
 
 
 

@@ -44,7 +44,7 @@ from PyQt5 import QtWidgets, QtCore
 from os.path import abspath, dirname
 sys.path.insert(0, abspath(dirname(abspath(__file__)) + '/..'))
 
-import qdarkstyle
+import qdarkgraystyle
 import ui.example_pyqt5_ui as example_ui
 
 
@@ -78,7 +78,7 @@ def main():
     window.tabifyDockWidget(ui.dockWidget1, ui.dockWidget2)
 
     # setup stylesheet
-    app.setStyleSheet(qdarkstyle.load_stylesheet_pyqt5())
+    app.setStyleSheet(qdarkgraystyle.load_stylesheet_pyqt5())
 
     # auto quit after 2s when testing on travis-ci
     if '--travis' in sys.argv:
