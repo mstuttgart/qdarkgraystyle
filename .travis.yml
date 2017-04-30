@@ -1,24 +1,33 @@
 language: python
-
 python:
-  - '2.7'
-  - '3.2'
+- '2.7'
+- '3.2'
 
 virtualenv:
   system_site_packages: true
 
 before_install:
- - sudo apt-get update
- - sudo apt-get install -qq python-pyside --fix-missing
- - sudo apt-get install -qq python-qt4 --fix-missing
- - sudo apt-get install -qq python3-pyside --fix-missing
- - sudo apt-get install -qq python3-pyqt4 --fix-missing
- - 'export DISPLAY=:99.0'
- - 'sh -e /etc/init.d/xvfb start'
+- sudo apt-get update
+- sudo apt-get install -qq python-pyside --fix-missing
+- sudo apt-get install -qq python-qt4 --fix-missing
+- sudo apt-get install -qq python3-pyside --fix-missing
+- sudo apt-get install -qq python3-pyqt4 --fix-missing
+- export DISPLAY=:99.0
+- sh -e /etc/init.d/xvfb start
 
 before_script:
-  - cd example
-  
+- cd example
+
 script:
-  - python example_pyqt.py --travis
-  - python example_pyside.py --travis
+- python example_pyqt.py --travis
+- python example_pyside.py --travis
+
+deploy:
+  provider: pypi
+  user: mstuttgart
+  password:
+    secure: vm1ILotYyr3z+Ye8x12rn8H0QJ+cUEmyAx7NVwv8vf2qGFFAHph8oSZXJf3pgvHFfrQEt7c3CIUit4H+a+SsQU7PaXPTQVz74SOIsbh716NmSjI8YtWWACR/27R2cA6Ft9wVsATVmnJsU9qamJafYS0Y4pllr3Lo1fe0UlMTuuHl+kE3IfDNOXhEtdsvTfvlueqIMyhgbDRCkJlxwMXfvRIzftekOFV2eRH7IKaLBYLsggzH8DxWKvLdtCaS4B0WI9pJ3hBM3n7Q3EKnA7EMhpxiygtfpcb7kUUKrSauWflJv3VRKDRS/76QjEuJ0NFyA1Oo0dkanu9XTwBFOC1oKSDTi4FASrKbZScD5fk8OD8KZswEQ2KoYs4XigxHf9jDtLcPBwLsR924rdEYlBR+lQOuPOU0qSBA4l2YXD0iNDiLg9BiVaCtp1nCf2IryCGWCdk3aLwl4t6W4c5KiB1GG5hQ4CgkNaSN/PrblUshixRUXh7d6XuCdczleM0sVEhIPVPHkyXKTAhxrHevJJlOPRfXYQv7VAqWTo48k5KVET1yQk2YE1LevID1C8/Es/aZ8Lsy0s4DJfsGK5TXoC40QdPL0zanlY2emZ1qeaoqS4l67py/6SNkjlAsAv6SeBojjdH+DaHe+z9/4H9Ki2IDUe4PnV7wQsqn0+XKLAlV0GU=
+  on:
+    tags: true
+    distributions: sdist bdist_wheel
+    repo: mstuttgart/qdarkgray-stylesheet
