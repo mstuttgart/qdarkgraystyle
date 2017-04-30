@@ -1,7 +1,7 @@
 QDarkGray Stylesheet
 ====================
 
-.. image:: https://travis-ci.org/mstuttgart/qdarkgray-stylesheet.svg?branch=master?style=flat-square
+.. image:: https://img.shields.io/travis/mstuttgart/qdarkgray-stylesheet/master.svg?style=flat-square
     :target: https://travis-ci.org/mstuttgart/qdarkgray-stylesheet
 
 .. image:: https://github.com/mstuttgart/qdarkgraystyle.svg?style=flat-square
