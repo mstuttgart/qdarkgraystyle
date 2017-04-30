@@ -31,7 +31,7 @@ from setuptools import setup, find_packages
 from qdarkgraystyle import __version__
 
 setup(
-    name='QDarkGrayStyle',
+    name='qdarkgraystyle',
     version=__version__,
     packages=find_packages(),
     url='https://github.com/mstuttgart/qdarkgray-stylesheet',
