@@ -133,6 +133,15 @@ Here are a few snapshots:
 * `Screenshot 2 <https://github.com/mstuttgart/qdarkgray-stylesheet/blob/master/screenshots/screen-02.png>`_
 * `Screenshot 3 <https://github.com/mstuttgart/qdarkgray-stylesheet/blob/master/screenshots/screen-03.png>`_
 
+Contributing
+============
+
+1. Fork it (<https://github.com/mstuttgart/qdarkgray-stylesheet/fork>)
+2. Create your feature branch (``git checkout -b feature/fooBar``)
+3. Commit your changes (``git commit -am 'Add some fooBar'``)
+4. Push to the branch (``git push origin feature/fooBar``)
+5. Create a new Pull Request
+
 Credits
 =======
 This package is totally based on `QDarkStyleSheet <https://github.com/ColinDuquesnoy/QDarkStyleSheet>`_ theme created by `Colin Duquesnoy <https://github.com/ColinDuquesnoy>`_.
