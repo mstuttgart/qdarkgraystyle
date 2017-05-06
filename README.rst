@@ -13,7 +13,7 @@ QDarkGray Stylesheet
 .. image:: https://img.shields.io/pypi/l/qdarkgraystyle.svg?style=flat-square
     :target: https://github.com/mstuttgart/qdarkgraystyle/blob/master/LICENSE
 
-A dark gray stylesheet for Qt applications (Qt4, Qt5, PySide, PyQt4 and PyQt5). This theme is a gray variation of `QDarkStyleSheet <https://github.com/ColinDuquesnoy/QDarkStyleSheet>`_ theme with little adjust in colors and widgets.
+A dark gray stylesheet for Qt applications (Qt4, Qt5, PySide, PyQt4 and PyQt5). This theme is a gray variation of `QDarkStyleSheet <https://github.com/ColinDuquesnoy/QDarkStyleSheet>`_ theme.
 
 Installation
 ============
