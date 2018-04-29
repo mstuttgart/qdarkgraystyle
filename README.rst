@@ -146,4 +146,4 @@ Credits
 =======
 This package is totally based on `QDarkStyleSheet <https://github.com/ColinDuquesnoy/QDarkStyleSheet>`_ theme created by `Colin Duquesnoy <https://github.com/ColinDuquesnoy>`_.
 
-Copyright (C) 2017 by Michell Stuttgart Faria
+Copyright (C) 2017-2018 by Michell Stuttgart Faria
