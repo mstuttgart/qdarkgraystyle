@@ -34,7 +34,7 @@ import platform
 
 import qdarkgraystyle.compile_qrc
 
-__version__ = '0.0.3'
+__version__ = '1.0.0'
 
 
 def _logger():
