@@ -39,7 +39,7 @@ setup(
     name='qdarkgraystyle',
     version=__version__,
     packages=find_packages(),
-    url='https://github.com/mstuttgart/qdarkgray-stylesheet',
+    url='https://github.com/mstuttgart/qdarkgraystyle',
     license='MIT License',
     author='Michell Stuttgart',
     author_email='michellstut@gmail.com',
