@@ -6,27 +6,25 @@
 [![License: MIT](https://img.shields.io/pypi/l/qdarkgraystyle.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 
 
-A dark gray stylesheet for PyQt5 applications. This theme is a gray variation of `QDarkStyleSheet <https://github.com/ColinDuquesnoy/QDarkStyleSheet>`_ theme.
+A dark gray stylesheet for PyQt5 applications. This theme is a gray variation of [QDarkStyleSheet](https://github.com/ColinDuquesnoy/QDarkStyleSheet) theme.
 
-Installation
-============
+## Installation
 
-Python
------------
+Install **qdarkgraystyle** package using the *setup* script or using *pip*:
 
-Install **qdarkgraystyle** package using the *setup* script or using *pip*
-
-> pip install qdarkgraystyle
+```
+pip install qdarkgraystyle
+```
 
 To use `qdarkgraystyle` with PySide or PyQt and with Python2. Please install the old version `0.0.3` :
 
-> pip install qdarkgraystyle==0.0.3
-
-
+```
+pip install qdarkgraystyle==0.0.3
+```
 
 ## Usage
 
-Here is an example using PySide
+Here is an example using PyQt5:
 
 ```python
 
@@ -68,15 +66,15 @@ Here are a few snapshots:
 
 1. Fork it: [https://github.com/mstuttgart/qdarkgray-stylesheet/fork](https://github.com/mstuttgart/qdarkgray-stylesheet/fork)
 2. Create your feature branch:
- > ``git checkout -b feature/fooBar``
+ > git checkout -b feature/fooBar
 3. Commit your changes: 
- > ``git commit -am 'Add some fooBar'``
+ > git commit -am 'Add some fooBar'
 4. Push to the branch:
- > ``git push origin feature/fooBar``
+ > git push origin feature/fooBar
 5. Create a new Pull Request
 
-Credits
-=======
+## Credits
+
 This package is totally based on [QDarkStyleSheet](https://github.com/ColinDuquesnoy/QDarkStyleSheet) theme created by [Colin Duquesnoy](https://github.com/ColinDuquesnoy).
 
 Copyright (C) 2017-2018 by Michell Stuttgart Faria
