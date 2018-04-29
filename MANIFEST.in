@@ -5,7 +5,7 @@
 
 include MANIFEST.in
 include setup.py
-include COPYING
+include LICENSE
 include README.rst
 include qdarkgraystyle/style.qss
 include qdarkgraystyle/style.qrc
