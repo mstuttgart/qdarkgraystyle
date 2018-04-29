@@ -22,3 +22,14 @@ before_script:
 
 script:
   - python example_pyqt5.py --travis
+
+# After you create the Github repo and add it to Travis, run the
+# travis_pypi_setup.py script to finish PyPI deployment setup
+deploy:
+  provider: pypi
+  distributions: "sdist bdist_wheel"
+  user: mstuttgart
+  password: $PYPI_PASSWORD
+  on:
+    tags: true
+    repo: mstuttgart/qdarkgraystyle
