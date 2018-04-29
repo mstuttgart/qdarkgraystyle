@@ -28,3 +28,6 @@ deb_dist
 
 # virtualenv
 env/
+
+# Visualcode project
+.vscode/
