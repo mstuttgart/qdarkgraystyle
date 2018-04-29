@@ -38,7 +38,7 @@ if sys.argv[-1] == 'publish':
     os.system('python setup.py sdist bdist_wheel upload -r pypi')
     sys.exit()
 
-with open('README.rst', 'r') as readme_file:
+with open('README.md', 'r') as readme_file:
     readme = readme_file.read()
 
 setup(
