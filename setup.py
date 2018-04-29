@@ -32,12 +32,6 @@ import sys
 from setuptools import setup, find_packages
 from qdarkgraystyle import __version__
 
-if sys.argv[-1] == 'publish':
-    os.system("git tag -a %s -m 'version %s'" % (__version__,  __version__))
-    os.system('git push --tags')
-    os.system('python setup.py sdist bdist_wheel upload -r pypi')
-    sys.exit()
-
 with open('README.md', 'r') as readme_file:
     readme = readme_file.read()
 
