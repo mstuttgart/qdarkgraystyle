@@ -17,11 +17,8 @@ before_install:
 install:
   - pip install -r requirements.txt
 
-before_script:
-  - cd example
-
 script:
-  - python example_pyqt5.py --travis
+  - python example/example_pyqt5.py --travis
 
 # After you create the Github repo and add it to Travis, run the
 # travis_pypi_setup.py script to finish PyPI deployment setup
