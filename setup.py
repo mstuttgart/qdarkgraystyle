@@ -58,9 +58,6 @@ setup(
           'Operating System :: POSIX :: Linux',
           'Operating System :: MacOS',
           'Programming Language :: Python :: 2.7',
-          'Programming Language :: Python :: 3.2',
-          'Programming Language :: Python :: 3.3',
-          'Programming Language :: Python :: 3.4',
           'Programming Language :: Python :: 3.5',
           'Topic :: Software Development :: Libraries :: Application '
           'Frameworks',
