@@ -27,9 +27,6 @@
 """
 Utility scripts to compile the qrc file. The script will
 attempt to compile the qrc file using the following tools:
-    - rcc
-    - pyside-rcc
-    - pyrcc4
     - pyrcc5
 
 Delete the compiled files that you don't want to use 
@@ -44,16 +41,10 @@ logger.setLevel(logging.INFO)
 
 def compile_all():
     """
-    Compile style.qrc using rcc, pyside-rcc, pyrcc4 and pyrcc5
+    Compile style.qrc  pyrcc5
     """
-    logger.info('Compiling for PyQt4: style.qrc -> pyqt_style_rc.py')
-    os.system("pyrcc4 -py3 style.qrc -o pyqt_style_rc.py")
-
     logger.info('Compiling for PyQt5: style.qrc -> pyqt5_style_rc.py')
     os.system('pyrcc5 style.qrc -o pyqt5_style_rc.py')
-
-    logger.info('Compiling for PySide: style.qrc -> pyside_style_rc.py')
-    os.system('pyside-rcc -py3 style.qrc -o pyside_style_rc.py')
 
 
 if __name__ == '__main__':

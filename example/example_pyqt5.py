@@ -30,7 +30,7 @@ Load an ui made in QtDesigner and apply the DarkStyleSheet.
 
 
 Requirements:
-    - Python 2 or Python 3
+    - Python 3
     - PyQt5
 
 .. note.. :: qdarkgraystyle does not have to be installed to run
@@ -78,7 +78,7 @@ def main():
     window.tabifyDockWidget(ui.dockWidget1, ui.dockWidget2)
 
     # setup stylesheet
-    app.setStyleSheet(qdarkgraystyle.load_stylesheet_pyqt5())
+    app.setStyleSheet(qdarkgraystyle.load_stylesheet())
 
     # auto quit after 2s when testing on travis-ci
     if '--travis' in sys.argv:
