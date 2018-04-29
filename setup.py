@@ -38,6 +38,9 @@ if sys.argv[-1] == 'publish':
     os.system('python setup.py sdist bdist_wheel upload -r pypi')
     sys.exit()
 
+with open('README.rst', 'r') as readme_file:
+    readme = readme_file.read()
+
 setup(
     name='qdarkgraystyle',
     version=__version__,
@@ -47,7 +50,10 @@ setup(
     author='Michell Stuttgart',
     author_email='michellstut@gmail.com',
     description='A dark gray stylesheet for PyQt/PySide applications',
-    long_description=open('README.rst', 'r').read(),
+    long_description=readme,
+    install_requires=[
+        'PyQt5>=5.6',
+    ],
     classifiers=[
           'Development Status :: 5 - Production/Stable',
           'Environment :: X11 Applications :: Qt',
