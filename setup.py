@@ -32,7 +32,7 @@ import sys
 from setuptools import setup, find_packages
 from qdarkgraystyle import __version__
 
-with open('README.md', 'r') as readme_file:
+with open('README.rst', 'r') as readme_file:
     readme = readme_file.read()
 
 setup(
@@ -45,6 +45,7 @@ setup(
     author_email='michellstut@gmail.com',
     description='A dark gray stylesheet for PyQt/PySide applications',
     long_description=readme,
+
     install_requires=[
         'PyQt5>=5.6',
     ],
@@ -62,4 +63,5 @@ setup(
           'Topic :: Software Development :: Libraries :: Application '
           'Frameworks',
     ],
+    test_suite='tests',
 )

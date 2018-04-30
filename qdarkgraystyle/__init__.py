@@ -32,7 +32,10 @@ with the correct rc file.
 import logging
 import platform
 
-import qdarkgraystyle.compile_qrc
+from PyQt5 import QtCore
+
+from qdarkgraystyle import compile_qrc, pyqt5_style_rc
+
 
 __version__ = '1.0.0'
 
@@ -50,19 +53,14 @@ def load_stylesheet():
     compile_qrc.compile_all()
 
     # Smart import of the rc file
-    import qdarkgraystyle.pyqt5_style_rc
-
-    # Load the stylesheet content from resources
-    from PyQt5.QtCore import QFile, QTextStream
-
-    f = QFile(':qdarkgraystyle/style.qss')
+    f = QtCore.QFile(':qdarkgraystyle/style.qss')
     if not f.exists():
         _logger().error('Unable to load stylesheet, file not found in '
                         'resources')
         return ''
     else:
-        f.open(QFile.ReadOnly | QFile.Text)
-        ts = QTextStream(f)
+        f.open(QtCore.QFile.ReadOnly | QtCore.QFile.Text)
+        ts = QtCore.QTextStream(f)
         stylesheet = ts.readAll()
         if platform.system().lower() == 'darwin':  # see issue #12 on github
             mac_fix = '''
