@@ -30,3 +30,5 @@ deploy:
   on:
     tags: true
     repo: mstuttgart/qdarkgraystyle
+    branch: master
+    python: '3.5'
