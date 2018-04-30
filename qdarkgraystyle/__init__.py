@@ -49,8 +49,6 @@ def load_stylesheet():
     Loads the stylesheet for use in a pyqt5 application.
     :return the stylesheet string
     """
-    # Validate that rc files is updated
-    compile_qrc.compile_all()
 
     # Smart import of the rc file
     f = QtCore.QFile(':qdarkgraystyle/style.qss')
