@@ -37,7 +37,7 @@ from PyQt5 import QtCore
 from qdarkgraystyle import compile_qrc, pyqt5_style_rc
 
 
-__version__ = '1.0.0'
+__version__ = '1.0.1'
 
 
 def _logger():
