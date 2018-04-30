@@ -14,6 +14,7 @@ __pycache__
 *.sig
 pkg/
 src/
+qdarkgraystyle.egg-info/
 
 # stdeb files
 *.tar.gz
