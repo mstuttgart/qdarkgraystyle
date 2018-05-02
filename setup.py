@@ -48,6 +48,7 @@ setup(
 
     install_requires=[
         'PyQt5>=5.6',
+        'deprecated',
     ],
     classifiers=[
           'Development Status :: 5 - Production/Stable',
