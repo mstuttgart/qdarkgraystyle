@@ -30,6 +30,14 @@ or
 
     pip install qdarkgraystyle
 
+The *PySide* and *PyQt4* support was dropped in version *1.0.0*. To use `qdarkgraystyle` with *PySide* or *PyQt4* or with *Python 2.7*, please use the version *0.0.3*.
+
+.. code:: bash
+
+    pip install qdarkgraystyle==0.0.3
+
+The support to *PySide2* will be add in future.
+
 Usage
 ============
 
@@ -61,6 +69,7 @@ There is an example included in the *example* folder.
 
 You can run the script without installing `qdarkgraystyle`. You only need to have
 PyQt5 installed on your system.
+
 
 Contribute
 ==========
