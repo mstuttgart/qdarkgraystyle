@@ -44,6 +44,7 @@ Usage
 Here is an example using PyQt5.
 
 .. code:: python
+
     import sys
     import qdarkgraystyle
     from PyQt5 import QtWidgets
