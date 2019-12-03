@@ -44,19 +44,17 @@ Usage
 Here is an example using PyQt5.
 
 .. code:: python
-
     import sys
     import qdarkgraystyle
-    from PyQt5 import QtGui
-    
-    
+    from PyQt5 import QtWidgets
+
     # create the application and the main window
-    app = QtGui.QApplication(sys.argv)
-    window = QtGui.QMainWindow()
-    
+    app = QtWidgets.QApplication(sys.argv)
+    window = QtWidgets.QMainWindow()
+
     # setup stylesheet
     app.setStyleSheet(qdarkgraystyle.load_stylesheet())
-    
+
     # run
     window.show()
     app.exec_()
