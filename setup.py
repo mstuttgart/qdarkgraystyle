@@ -32,7 +32,7 @@ import sys
 from setuptools import setup, find_packages
 from qdarkgraystyle import __version__
 
-with open('README.rst', 'r') as readme_file:
+with open('README.md', 'r') as readme_file:
     readme = readme_file.read()
 
 setup(
