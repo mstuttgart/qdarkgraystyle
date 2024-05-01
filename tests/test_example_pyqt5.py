@@ -17,16 +17,13 @@ import logging
 import sys
 import unittest
 
+from .example.ui import example_pyqt5_ui as example_ui
 from PyQt5 import QtCore, QtWidgets
 
 import qdarkgraystyle
-from example.ui import example_pyqt5_ui as example_ui
 
 
 class TestPyQt5(unittest.TestCase):
-
-    def setUp(self):
-        super(TestPyQt5, self).setUp()
 
     def test_create_main_window(self):
         """
