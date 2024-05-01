@@ -10,19 +10,19 @@
 <p align="center">
 
   <a href="https://github.com/mstuttgart/qdarkgraystyle/actions?query=workflow%3A%22Github+CI%22">
-    <img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/mstuttgart/qdarkgraystyle/test.yml?&color=d1dbcb&labelColor=323232&branch=develop&style=flat-square">
+    <img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/mstuttgart/qdarkgraystyle/test.yml?&color=d1dbcb&labelColor=323232&branch=develop&style=for-the-badge">
   </a>
 
   <a href="https://pypi.org/project/qdarkgraystyle">
-    <img src="https://img.shields.io/pypi/dm/qdarkgraystyle?&color=d1dbcb&labelColor=323232&style=flat-square" alt="Downloads">
+    <img src="https://img.shields.io/pypi/dm/qdarkgraystyle?&color=d1dbcb&labelColor=323232&style=for-the-badge" alt="Downloads">
   </a>
 
   <a href="https://pypi.org/project/qdarkgraystyle">
-    <img src="https://img.shields.io/pypi/v/qdarkgraystyle?style=flat-square&color=d1dbcb&labelColor=323232" alt="Ratings">
+    <img src="https://img.shields.io/pypi/v/qdarkgraystyle?style=for-the-badge&color=d1dbcb&labelColor=323232" alt="Ratings">
   </a>
 
   <a href="https://pypi.org/project/qdarkgraystyle/">
-    <img src="https://img.shields.io/pypi/pyversions/qdarkgraystyle?style=flat-square&color=d1dbcb&labelColor=323232" alt="Version">
+    <img src="https://img.shields.io/pypi/pyversions/qdarkgraystyle?style=for-the-badge&color=d1dbcb&labelColor=323232" alt="Version">
   </a>
 
 </p>
