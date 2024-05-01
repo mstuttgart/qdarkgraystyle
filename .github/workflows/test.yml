@@ -3,24 +3,55 @@ name: Test
 
 on: [push, pull_request]
 
+env:
+  # Display must be available globally for linux to know where xvfb is
+  DISPLAY: ":99.0"
+  QT_SELECT: "qt6"
+
 jobs:
   test:
     strategy:
       matrix:
-        python: [3.8', "3.9", "3.10", "3.11"]
-        platform: [ubuntu-latest, macos-latest, windows-latest]
-    runs-on: ${{ matrix.platform }}
+        python-version: ["3.8", "3.9", "3.10", "3.11"]
+        os: [ubuntu-22.04]
+
+    runs-on: ${{ matrix.os }}
+
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: Set up Python ${{ matrix.python }}
-
-        uses: actions/setup-python@v3
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
         with:
-          python-version: ${{ matrix.python }}
+          python-version: ${{ matrix.python-version }}
 
-      - name: Install test dependencies
-        run: pip install -e .
+      - name: Setup xvfb (Linux)
+        if: runner.os == 'Linux'
+        run: |
+          # Stuff copied wildly from several stackoverflow posts
+          sudo apt-get install -y xvfb libxkbcommon-x11-0 libxcb-icccm4 libxcb-image0 libxcb-keysyms1 libxcb-randr0 libxcb-render-util0 libxcb-xinerama0 libxcb-xinput0 libxcb-xfixes0 libxcb-shape0 libglib2.0-0 libgl1-mesa-dev
+          sudo apt-get install '^libxcb.*-dev' libx11-xcb-dev libglu1-mesa-dev libxrender-dev libxi-dev libxkbcommon-dev libxkbcommon-x11-dev
+          # start xvfb in the background
+          sudo /usr/bin/Xvfb $DISPLAY -screen 0 1280x1024x24 &
+
+      - name: Install Python dependencies
+        run: |
+          # prerequisites
+          python -m pip install --upgrade pip wheel
+          python -m pip install pytest pytest-qt
+
+      - name: Install package
+        run: |
+          pip install -e .
+
+      # - name: Install os dependencies 
+      #   run: |
+      #     sudo apt-get update
+      #     sudo apt-get install -y -qq qttools5-dev-tools
+      #     export DISPLAY=:99.0
+      #     sh -e /etc/init.d/xvfb start
+      #     sleep 3
+
+      # - name: Install test dependencies
+      #   run: pip install -e '.[test]'
 
       - name: Test
-        run: pytest 
+        run: pytest
