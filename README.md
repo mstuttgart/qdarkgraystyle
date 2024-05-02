@@ -10,7 +10,7 @@
 <p align="center">
 
   <a href="https://github.com/mstuttgart/qdarkgraystyle/actions?query=workflow%3A%22Github+CI%22">
-    <img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/mstuttgart/qdarkgraystyle/test.yml?&color=d1dbcb&labelColor=323232&branch=develop&style=for-the-badge">
+    <img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/mstuttgart/qdarkgraystyle/test.yml?&color=d1dbcb&labelColor=323232&branch=main&style=for-the-badge">
   </a>
 
   <a href="https://pypi.org/project/qdarkgraystyle">
