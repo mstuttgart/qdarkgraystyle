@@ -39,6 +39,14 @@
 
 A dark gray stylesheet for PyQt5 applications. This theme is a gray variation of [QDarkStyleSheet](https://github.com/ColinDuquesnoy/QDarkStyleSheet) theme.
 
+<details><summary> <b>Screenshots (Click to expand!)</b></summary>
+
+![screen-03](https://github.com/mstuttgart/qdarkgraystyle/assets/8174740/f07d5171-beb6-473b-adac-3808b800b587)
+![screen-02](https://github.com/mstuttgart/qdarkgraystyle/assets/8174740/8b7ad9d9-5c83-4f3f-b49f-2e905a12486b)
+![screen-01](https://github.com/mstuttgart/qdarkgraystyle/assets/8174740/1b891cb7-b82b-476f-b84c-559108436784)
+
+</details>
+
 # Install
 
 Install **qdarkgraystyle** package using using *pip*
